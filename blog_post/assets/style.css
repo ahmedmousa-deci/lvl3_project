@@ -47,3 +47,16 @@ h3 {
 h1, h2, h3 {
   font-family: "NewRocker";
 }
+
+*::selection {
+  background: var(--color-4);
+  color: var(--color-1);
+}
+
+a {
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: rgb(144, 238, 144);
+}
