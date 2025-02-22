@@ -34,7 +34,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* 
+
 h1 {
   font-size: 2em;
 }
@@ -45,7 +45,7 @@ h2 {
 
 h3 {
   font-size: 1.17em;
-} */
+}
 
 h1,
 h2,
@@ -127,4 +127,21 @@ a:hover {
 
 .search_button:hover > i:first-child {
   transform: rotate(22.5deg);
+}
+
+
+@media (max-width: 767px) {
+  * {
+    font-size: 18px;
+  }
+  .header_link, .search_bar {
+    display: none;
+  }
+
+  .header_title {
+    width: 100%;
+  }
+  .header {
+    justify-content: center;
+  }
 }

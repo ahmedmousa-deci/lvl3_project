@@ -65,3 +65,26 @@
   text-align: center;
   margin: 50px;
 }
+
+
+/* that media works for mobile and tablets */
+
+@media (max-width: 1024px) {
+  .blog_content > p,
+  .blog_content > ul {
+    margin: 0;
+  }
+
+  .blog_content {
+    line-height: initial;
+  }
+
+  .main {
+    grid-template-areas:
+      "nav nav nav nav nav nav nav nav nav nav nav nav"
+      "info info info info info info info info info info info info"
+      "content content content content content content content content content content content content";
+  }
+
+
+}

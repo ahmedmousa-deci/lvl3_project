@@ -164,3 +164,18 @@
 }
 
 
+@media (max-width: 1024px) {
+  .best {
+    margin: 0;
+  }
+  .best_slider {
+    aspect-ratio: 16/9;
+  }
+  .posts_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .slider_content {
+    padding-inline: 0px;
+  }
+
+}
