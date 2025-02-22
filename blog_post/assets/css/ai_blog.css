@@ -1,0 +1,67 @@
+@import url(./style.css);
+
+.main {
+  margin-top: 50px;
+  padding-inline: 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "info info info info info info info info info info info info"
+    "content content content content content content content content content nav nav nav";
+  gap: 10px;
+}
+
+.blog_title {
+  text-align: center;
+}
+
+.blog_content {
+  line-height: 40px;
+  grid-area: content;
+}
+
+.blog_content > p,
+.blog_content > ul {
+  margin-left: 50px;
+}
+
+.blog_content > p {
+  text-indent: 30px;
+}
+
+.info {
+  grid-area: info;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.author_info {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-areas:
+    "pic name name name name name name name name name name name name name name name"
+    "pic bio bio bio bio bio bio bio bio bio bio bio bio bio bio bio";
+  align-items: center;
+}
+
+.profile_pic {
+  grid-area: pic;
+  border-radius: 50%;
+  width: 48px;
+}
+
+.author_name {
+  grid-area: name;
+}
+
+.author_bio {
+  grid-area: bio;
+  filter: brightness(0.5);
+}
+
+.footer {
+  text-align: center;
+  margin: 50px;
+}
