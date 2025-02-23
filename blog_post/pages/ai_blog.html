@@ -1,219 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/ai_blog.css" />
-    <title>Ai Blog</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="" class="header_link">Subscribe</a>
 
-      <h1 class="header_title">Blog Post</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/ai_blog.css" />
+  <title>Ai Blog</title>
+</head>
 
-      <form action="" class="search_bar">
-        <input
-          type="text"
-          name="search"
-          id="search"
-          class="search_input"
-          placeholder="Search"
-        />
-        <button type="submit" class="search_button">
-          <i class="bi bi-search"></i>
-        </button>
-      </form>
-    </header>
+<body>
+  <!-- the same header -->
+  <header class="header">
+    <a href="#" class="header_link">Subscribe</a>
+    
+    <h1 class="header_title">Blog Post</h1>
+    
+    <form action="#" class="search_bar">
+      <input type="text" name="search" id="search" class="search_input" placeholder="Search" />
+      <button type="submit" class="search_button">
+        <i class="bi bi-search"></i>
+      </button>
+    </form>
+  </header>
 
-    <main class="main">
-      <div class="info">
-        <h1 class="blog_title">The Rise of Artificial Intelligence</h1>
-        <div class="author_info">
-          <img src="../assets/images/chatgpt.png" alt="" class="profile_pic" />
-          <h4 class="author_name">Chatgpt</h4>
-          <p class="author_bio">An Ai writer</p>
-        </div>
+  <main class="main">
+    <!-- i used "grid" for the page layout -->
+    <!-- post info (post title, author name, author bio ) -->
+    <div class="info">
+      <h1 class="blog_title">The Rise of Artificial Intelligence</h1>
+      <div class="author_info">
+        <img src="../assets/images/chatgpt.png" alt="Chatgpt Profile Picture" class="profile_pic" />
+        <h4 class="author_name">Chatgpt</h4>
+        <p class="author_bio">An Ai writer</p>
       </div>
-      <nav class="nav">
-        <h3 class="nav_title">Table of content</h3>
-        <ul class="page_sections">
-          <li class="page_section">
-            <a href="#i" class="page_section_link">Introduction</a>
-          </li>
-          <li class="page_section">
-            <a href="#wiai" class="page_section_link">What is AI</a>
-          </li>
-          <li class="page_section">
-            <a href="#aoaiel" class="page_section_link"
-              >Applications of AI in Everyday Life</a
-            >
-          </li>
-          <li class="page_section">
-            <a href="#aaetca" class="page_section_link"
-              >AI and Ethics: The Challenges Ahead</a
-            >
-          </li>
-          <li class="page_section">
-            <a href="#aatfwn" class="page_section_link"
-              >AI and the Future: What's Next?</a
-            >
-          </li>
-          <li class="page_section">
-            <a href="#c" class="page_section_link">Conclusion</a>
-          </li>
-        </ul>
-        <h3 class="nav_title">Resources</h3>
-        <ul class="resources">
-          <li class="resource">
-            <a href="https://www.wikipedia.org/" class="resource_link"
-              >Wikipedia</a
-            >
-          </li>
-          <li class="resource">
-            <a href="https://www.britannica.com/" class="resource_link"
-              >Britannica</a
-            >
-          </li>
-          <li class="resource">
-            <a href="https://www.springer.com/" class="resource_link"
-              >Springer</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="blog_content">
-        <!-- for ids i used the first char for every word of the title -->
-        <h2 id="i">Introduction</h2>
-        <p>
-          Artificial Intelligence (AI) has rapidly evolved from a futuristic
-          <br />
-          concept to an essential part of our daily lives. Whether it's virtual
-          <br />
-          assistants like Siri or Alexa, personalized recommendations on <br />
-          Netflix, or even self-driving cars, AI is transforming industries and
-          <br />
-          the way we interact with technology. In this blog post, we'll explore
-          <br />
-          the basics of AI, its current applications, and how it's poised to
-          <br />
-          shape our future.
-        </p>
-
-        <h2 id="wiai">What is Artificial Intelligence?</h2>
-        <p>
-          At its core, AI refers to the development of machines that can perform
-          <br />
-          tasks typically requiring human intelligence. These tasks include
-          <br />
-          problem-solving, decision-making, language processing, and even <br />
-          creative endeavors like art and music. There are two main types of AI:
-          <br />
-          <strong>narrow AI</strong>, which is designed for specific tasks
-          <br />
-          (e.g., facial recognition), and <strong>general AI</strong>, which has
-          <br />
-          the potential to perform any intellectual task that a human can do
-          <br />
-          (although we're not quite there yet!).
-        </p>
-
-        <h2 id="aoaiel">Applications of AI in Everyday Life</h2>
-        <ul>
-          <li>
-            <strong>Healthcare:</strong> AI-powered tools are helping doctors
-            <br />
-            diagnose diseases more accurately and predict patient outcomes, from
-            <br />
-            detecting early signs of cancer to analyzing medical images.
-          </li>
-          <li>
-            <strong>Finance:</strong> In the financial world, AI algorithms<br />
-            analyze market trends, prevent fraud, and offer personalized
-            investment advice.
-          </li>
-          <li>
-            <strong>Transportation:</strong> Self-driving cars, powered by<br />
-            AI, are being tested by companies like Tesla and Waymo, and could
-            <br />
-            revolutionize the way we travel.
-          </li>
-          <li>
-            <strong>Entertainment:</strong> AI is used in gaming for smart<br />
-            NPCs (non-playable characters) and in streaming services like<br />
-            Netflix and Spotify to recommend content tailored to your
-            preferences.
-          </li>
-          <li>
-            <strong>Customer Service:</strong> Virtual assistants and<br />
-            chatbots are now providing 24/7 customer service, helping to
-            resolve<br />
-            issues and answer queries efficiently.
-          </li>
-        </ul>
-
-        <h2 id="aaetca">AI and Ethics: The Challenges Ahead</h2>
-        <p>
-          As AI continues to grow, it raises important ethical concerns. Some<br />
-          key questions to consider:
-        </p>
-        <ul>
-          <li>
-            <strong>Data Privacy:</strong> AI systems often require large<br />
-            amounts of data. How can we ensure that personal data is
-            protected?<br />
-          </li>
-          <li>
-            <strong>Bias in AI:</strong> AI models can sometimes replicate<br />
-            biases present in the data they are trained on, leading to unfair<br />
-            outcomes in areas like hiring or law enforcement.
-          </li>
-          <li>
-            <strong>Job Displacement:</strong> Automation through AI could<br />
-            potentially replace certain jobs. How can we prepare the workforce
-            for these changes?
-          </li>
-        </ul>
-        <p>
-          While AI presents incredible opportunities, it's essential that we<br />
-          address these challenges responsibly.
-        </p>
-
-        <h2 id="aatfwn">AI and the Future: What's Next?</h2>
-        <p>
-          Looking ahead, AI has the potential to revolutionize areas such as<br />
-          education, sustainability, and space exploration. Imagine
-          AI-powered<br />
-          systems that personalize learning experiences for each student or
-          AI<br />
-          helping scientists solve complex global problems like climate
-          change!<br />
-          As AI continues to develop, its impact will only become more
-          profound.<br />
-          But with great power comes great responsibility—we must be mindful
-          of<br />
-          its limitations and ensure its development aligns with human values.
-        </p>
-
-        <h2 id="c">Conclusion</h2>
-        <p>
-          AI is no longer just a buzzword—it's a rapidly growing field that's<br />
-          reshaping industries and our everyday lives. From improving
-          healthcare<br />
-          outcomes to revolutionizing transportation, the potential for AI is<br />
-          vast. However, as we embrace these advancements, we must also
-          address<br />
-          the ethical concerns surrounding AI to ensure that it benefits<br />
-          everyone. The future is bright, and with responsible innovation, AI<br />
-          will play a pivotal role in shaping a smarter, more efficient, and<br />
-          inclusive world.
-        </p>
-      </div>
-    </main>
-    <footer class="footer">
-      <p class="footer_text">
-        Copyrights © 2025 Blog Post All rights reserved.
+    </div>
+    <!-- page navigation -->
+    <nav class="nav">
+      <h3 class="nav_title">Table of content</h3>
+      <!-- page sections -->
+      <!-- i used anchor links and used the "scroll-behavior: smooth" for smooth scrolling-->
+      <!-- for ids i used the first char for every word of the title -->
+      <ul class="page_sections">
+        <li class="page_section">
+          <a href="#i" class="page_section_link">Introduction</a>
+        </li>
+        <li class="page_section">
+          <a href="#wiai" class="page_section_link">What is AI</a>
+        </li>
+        <li class="page_section">
+          <a href="#aoaiel" class="page_section_link">Applications of AI in Everyday Life</a>
+        </li>
+        <li class="page_section">
+          <a href="#aaetca" class="page_section_link">AI and Ethics: The Challenges Ahead</a>
+        </li>
+        <li class="page_section">
+          <a href="#aatfwn" class="page_section_link">AI and the Future: What's Next?</a>
+        </li>
+        <li class="page_section">
+          <a href="#c" class="page_section_link">Conclusion</a>
+        </li>
+      </ul>
+      <h3 class="nav_title">Resources</h3>
+      <!-- Resources for the blog post -->
+      <ul class="resources">
+        <li class="resource">
+          <a href="https://www.wikipedia.org/" class="resource_link">Wikipedia</a>
+        </li>
+        <li class="resource">
+          <a href="https://www.britannica.com/" class="resource_link">Britannica</a>
+        </li>
+        <li class="resource">
+          <a href="https://www.springer.com/" class="resource_link">Springer</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="blog_content">
+      <!-- for ids i used the first char for every word of the title -->
+      <h2 id="i">Introduction</h2>
+      <p>
+        Artificial Intelligence (AI) has rapidly evolved from a futuristic
+        <br />
+        concept to an essential part of our daily lives. Whether it's virtual
+        <br />
+        assistants like Siri or Alexa, personalized recommendations on <br />
+        Netflix, or even self-driving cars, AI is transforming industries and
+        <br />
+        the way we interact with technology. In this blog post, we'll explore
+        <br />
+        the basics of AI, its current applications, and how it's poised to
+        <br />
+        shape our future.
       </p>
-    </footer>
-  </body>
+
+      <h2 id="wiai">What is Artificial Intelligence?</h2>
+      <p>
+        At its core, AI refers to the development of machines that can perform
+        <br />
+        tasks typically requiring human intelligence. These tasks include
+        <br />
+        problem-solving, decision-making, language processing, and even <br />
+        creative endeavors like art and music. There are two main types of AI:
+        <br />
+        <strong>narrow AI</strong>, which is designed for specific tasks
+        <br />
+        (e.g., facial recognition), and <strong>general AI</strong>, which has
+        <br />
+        the potential to perform any intellectual task that a human can do
+        <br />
+        (although we're not quite there yet!).
+      </p>
+
+      <h2 id="aoaiel">Applications of AI in Everyday Life</h2>
+      <ul>
+        <li>
+          <strong>Healthcare:</strong> AI-powered tools are helping doctors
+          <br />
+          diagnose diseases more accurately and predict patient outcomes, from
+          <br />
+          detecting early signs of cancer to analyzing medical images.
+        </li>
+        <li>
+          <strong>Finance:</strong> In the financial world, AI algorithms<br />
+          analyze market trends, prevent fraud, and offer personalized
+          investment advice.
+        </li>
+        <li>
+          <strong>Transportation:</strong> Self-driving cars, powered by<br />
+          AI, are being tested by companies like Tesla and Waymo, and could
+          <br />
+          revolutionize the way we travel.
+        </li>
+        <li>
+          <strong>Entertainment:</strong> AI is used in gaming for smart<br />
+          NPCs (non-playable characters) and in streaming services like<br />
+          Netflix and Spotify to recommend content tailored to your
+          preferences.
+        </li>
+        <li>
+          <strong>Customer Service:</strong> Virtual assistants and<br />
+          chatbots are now providing 24/7 customer service, helping to
+          resolve<br />
+          issues and answer queries efficiently.
+        </li>
+      </ul>
+
+      <h2 id="aaetca">AI and Ethics: The Challenges Ahead</h2>
+      <p>
+        As AI continues to grow, it raises important ethical concerns. Some<br />
+        key questions to consider:
+      </p>
+      <ul>
+        <li>
+          <strong>Data Privacy:</strong> AI systems often require large<br />
+          amounts of data. How can we ensure that personal data is
+          protected?<br />
+        </li>
+        <li>
+          <strong>Bias in AI:</strong> AI models can sometimes replicate<br />
+          biases present in the data they are trained on, leading to unfair<br />
+          outcomes in areas like hiring or law enforcement.
+        </li>
+        <li>
+          <strong>Job Displacement:</strong> Automation through AI could<br />
+          potentially replace certain jobs. How can we prepare the workforce
+          for these changes?
+        </li>
+      </ul>
+      <p>
+        While AI presents incredible opportunities, it's essential that we<br />
+        address these challenges responsibly.
+      </p>
+
+      <h2 id="aatfwn">AI and the Future: What's Next?</h2>
+      <p>
+        Looking ahead, AI has the potential to revolutionize areas such as<br />
+        education, sustainability, and space exploration. Imagine
+        AI-powered<br />
+        systems that personalize learning experiences for each student or
+        AI<br />
+        helping scientists solve complex global problems like climate
+        change!<br />
+        As AI continues to develop, its impact will only become more
+        profound.<br />
+        But with great power comes great responsibility—we must be mindful
+        of<br />
+        its limitations and ensure its development aligns with human values.
+      </p>
+
+      <h2 id="c">Conclusion</h2>
+      <p>
+        AI is no longer just a buzzword—it's a rapidly growing field that's<br />
+        reshaping industries and our everyday lives. From improving
+        healthcare<br />
+        outcomes to revolutionizing transportation, the potential for AI is<br />
+        vast. However, as we embrace these advancements, we must also
+        address<br />
+        the ethical concerns surrounding AI to ensure that it benefits<br />
+        everyone. The future is bright, and with responsible innovation, AI<br />
+        will play a pivotal role in shaping a smarter, more efficient, and<br />
+        inclusive world.
+      </p>
+    </div>
+  </main>
+  <!-- the same footer -->
+  <footer class="footer">
+    <p class="footer_text">
+      Copyrights © 2025 Blog Post All rights reserved.
+    </p>
+  </footer>
+</body>
+
 </html>

@@ -1,14 +1,18 @@
+/* importing the general styles */
+
 @import url(./style.css);
+
+
 
 .main {
   margin-top: 50px;
   padding-inline: 50px;
+  /* used grid with grid-area to align the page layout and be easier for responsive @media */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
     "info info info info info info info info info info info info"
     "content content content content content content content content content nav nav nav";
-  gap: 10px;
 }
 
 .blog_title {
@@ -16,6 +20,7 @@
 }
 
 .blog_content {
+  /* change the space between each line */
   line-height: 40px;
   grid-area: content;
 }
@@ -26,6 +31,7 @@
 }
 
 .blog_content > p {
+  /* make and indent to the first line of the paragraph */
   text-indent: 30px;
 }
 
@@ -38,6 +44,7 @@
 }
 
 .author_info {
+  /* used grid here to align the info too */
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-areas:
@@ -58,6 +65,7 @@
 
 .author_bio {
   grid-area: bio;
+  /* used the brightness filter function to make the bio a little bit darker */
   filter: brightness(0.5);
 }
 
@@ -66,8 +74,6 @@
   margin: 50px;
 }
 
-
-/* that media works for mobile and tablets */
 
 @media (max-width: 1024px) {
   .blog_content > p,
