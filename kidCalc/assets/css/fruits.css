@@ -1,0 +1,14 @@
+/* define theme images */
+
+html {
+  background-image: url(../images/fruits.png);
+}
+
+.kidcalc::before {
+  background-image: url(../images/apple.png);
+  transform: rotate(40deg);
+}
+
+.kidcalc::after {
+  background-image: url(../images/bananas.png);
+}

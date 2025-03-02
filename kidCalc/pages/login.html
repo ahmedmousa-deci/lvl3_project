@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>KidCalc | Login</title>
+</head>
+<body>
+  <!-- form -->
+  <form action="./kidcalc.html" class="form" id="form">
+    <h1 class="form_title">Login</h1>
+    <!-- require property force the user to not leave the inputs empty -->
+    <input type="text" class="name" placeholder="Name" name="name" id="name" required>
+    <input type="number" class="age" placeholder="Age" name="age" required>
+    <select name="theme" class="theme" id="theme" required>
+      <!-- i made the "-" option to make force the user to choose -->
+      <option value="">-</option>
+      <option value="space">Space</option>
+      <option value="fruits">Fruits</option>
+    </select>
+  <button type="submit" class="login_btn">Login</button>
+  </form>
+  <script src="../scripts/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+  align-items: center;
+  /* disable the scroll bar */
+  overflow: hidden;
+}
+
+.bg_img {
+  width: 50%;
+  /* make the image a little bit darker */
+  filter: brightness(0.5);
+}
+
+.context {
+  white-space: nowrap;
+  width: 50%;
+  z-index: 9;
+  /* make the font a little bit lighter */
+  filter: brightness(1.2);
+}
+
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .bg_img {
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  .context {
+    width: 100%;
+    white-space: normal;
+  }
+  
+}

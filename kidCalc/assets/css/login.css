@@ -1,0 +1,36 @@
+.form {
+  /* centering the form */
+  margin: 1.5rem auto;
+  /* i used min max width to make it responsive */
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-4);
+  padding: 20px;
+}
+
+.name, .age, .theme {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--color-3);
+  outline: 0;
+  cursor: pointer;
+  caret-color: var(--color-6);
+}
+
+
+.login_btn {
+  margin: 10px 0;
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  background: var(--color-6);
+  color: var(--color-5);
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: 0;
+}

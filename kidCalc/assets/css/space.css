@@ -1,0 +1,13 @@
+/* define theme images */
+
+html {
+  background-image: url(../images/space.png);
+}
+
+.kidcalc::before {
+  background-image: url(../images/astronaut.png);
+}
+
+.kidcalc::after {
+  background-image: url(../images/spacecraft.png);
+}

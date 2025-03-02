@@ -1,0 +1,47 @@
+@import url(../bootstrap-icons-1.11.3/font/bootstrap-icons.css);
+/* import style files */
+@import url(./index.css);
+@import url(./kidcalc.css);
+@import url(./login.css);
+
+/* define colors */
+
+:root {
+  --color-1: #191f34ff;
+  --color-2: #686876ff;
+  --color-3: #291d2dff;
+  --color-4: #32273cff;
+  --color-5: #161e2dff;
+  --color-6: #b85567ff;
+}
+
+/* define the global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  color: var(--color-2);
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 22px;
+}
+
+html {
+  background-color: var(--color-5);
+  /* "background-size: cover" to make the theme background image in the kid calc fit all of the page */
+  background-size: cover;
+}
+
+body {
+  /* give a blur effect to the background image */
+  backdrop-filter: blur(3px);
+  /* i will use position absolute in the future */
+  position: relative;
+}

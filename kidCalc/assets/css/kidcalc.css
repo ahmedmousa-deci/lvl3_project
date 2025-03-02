@@ -1,0 +1,257 @@
+.kidBody {
+  padding-top: 2rem;
+}
+
+.kidcalc {
+  max-width: 400px;
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: var(--color-4);
+  position: relative;
+}
+
+/* adding image on the top right of the calculator */
+.kidcalc::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+}
+
+/* add another image to bottom left */
+
+.kidcalc::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+}
+
+.expression_input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  background: #fff;
+  outline: 0;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.key {
+  height: 60px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: var(--color-3);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.key:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.key:active {
+  transform: translateY(0);
+}
+
+
+/* color the [+, -, /, *] keys */
+.key:nth-child(4),
+.key:nth-child(8),
+.key:nth-child(12),
+.key:nth-child(14) {
+  background: var(--color-5);
+}
+
+/* color the [=, >, <] key */
+.key:nth-child(15),
+.key:nth-child(16),
+.key:nth-child(17) {
+  background: var(--color-6);
+  color: #fff;
+}
+
+/* make the "0" fill 3 cols */
+.key:nth-child(13) {
+  grid-column: span 3;
+}
+
+/* make the "=" fill 2 cols */
+.key:last-child {
+  grid-column: span 2;
+}
+
+.submit {
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+  background: var(--color-1);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit:hover {
+  background: var(--color-2);
+  color: var(--color-1);
+}
+
+.info_bar {
+  width: 300px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: var(--color-4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-20px, 50%);
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.streak {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 2rem;
+  overflow: auto;
+  /* hide the scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.streak_day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background: var(--color-3);
+}
+
+.sun > *,
+.mon > * {
+  color: var(--color-6);
+}
+
+.day_streak {
+  font-size: 0.8rem;
+}
+
+.bi-fire {
+  font-size: 1.2rem;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-around;
+}
+
+.statistics div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.correct .bi {
+  color: darkgreen;
+}
+
+.incorrect .bi {
+  color: darkred;
+}
+
+.stat {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .kidcalc {
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .expression_input {
+    height: 50px;
+    font-size: 1.8rem;
+  }
+
+  .key {
+    height: 50px;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .info_bar {
+    position: static;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .statistics {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .streak {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .streak_day {
+    padding: 0.3rem;
+  }
+
+  .stat {
+    font-size: 1.2rem;
+  }
+
+  .bi-fire {
+    font-size: 1rem;
+  }
+}
+
+/* user friendly for touch screens like mobile */
+
+@media (hover: none) {
+  .key:hover {
+    transform: none;
+    background: var(--color-3);
+  }
+
+  .key:active {
+    background: #e9ecef;
+    transform: scale(0.95);
+  }
+}
