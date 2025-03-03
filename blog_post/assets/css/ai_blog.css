@@ -43,6 +43,25 @@
   grid-area: nav;
 }
 
+.social_links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.fb_link:hover *{
+  color: #3b5998;
+}
+
+.x_link:hover *{
+  color: #363636;
+}
+
+.insta_link:hover *{
+  color: #e4405f;
+}
+
 .author_info {
   /* used grid here to align the info too */
   display: grid;
@@ -91,6 +110,4 @@
       "info info info info info info info info info info info info"
       "content content content content content content content content content content content content";
   }
-
-
 }

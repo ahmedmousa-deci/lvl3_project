@@ -1,6 +1,5 @@
 @import url(../bootstrap-icons-1.11.3/font/bootstrap-icons.css);
 /* import style files */
-@import url(./index.css);
 @import url(./kidcalc.css);
 @import url(./login.css);
 
@@ -44,4 +43,11 @@ body {
   backdrop-filter: blur(3px);
   /* i will use position absolute in the future */
   position: relative;
+}
+
+
+.login_section, .kidcalc_section {
+  height: 100vh;
+  position: relative;
+  padding-top: 2rem;
 }

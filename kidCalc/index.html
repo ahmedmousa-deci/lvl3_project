@@ -5,17 +5,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/space.css" id="space_link">
+  <link rel="stylesheet" href="./assets/css/fruits.css" id="fruits_link" disabled>
   <title>KidCalc | Home page</title>
 </head>
 
 <body class="home">
-  <div class="context">
-    <h1 class="welcome_title">Welcome to KidCalc</h1>
-    <p class="welcome_text">KidCalc is a fun and interactive way for kids to learn math. <br> KidCalc is a fun and interactive way for kids to learn math. <br> It is designed to help
-      kids learn math in a fun and engaging way. </p>
-    <a href="./pages/login.html" class="btn">Get Started</a>
-  </div>
-  <img src="./assets/images/homepage_background.png" alt="A cute girl writes in her notebook" class="bg_img">
+  <section class="login_section">
+    <!-- form -->
+    <form action="#" class="form" id="form">
+      <h1 class="form_title">Login</h1>
+      <!-- require property force the user to not leave the inputs empty -->
+      <input type="text" class="name" placeholder="Name" name="name" id="name" required>
+      <input type="number" class="age" placeholder="Age" name="age" required>
+      <select name="theme" class="theme" id="theme" required>
+        <!-- i made the "-" option to make force the user to choose -->
+        <option value="space">Space</option>
+        <option value="fruits">Fruits</option>
+      </select>
+      <button type="submit" class="login_btn">Login</button>
+    </form>
+  </section>
+  <section class="kidcalc_section">
+      <!-- kidCalc -->
+  <section class="kidcalc">
+    <input type="text" class="expression_input" readonly>
+    <!-- keypad -->
+    <div class="keypad">
+      <!-- Numbers in calculator order (7-8-9 on top) -->
+      <button class="key">7</button>
+      <button class="key">8</button>
+      <button class="key">9</button>
+      <button class="key">&divide;</button>
+      <button class="key">4</button>
+      <button class="key">5</button>
+      <button class="key">6</button>
+      <button class="key">&times;</button>
+      <button class="key">1</button>
+      <button class="key">2</button>
+      <button class="key">3</button>
+      <button class="key">-</button>
+      <button class="key">0</button>
+      <button class="key">+</button>
+      <button class="key">&lt;</button>
+      <button class="key">&gt;</button>
+      <button class="key">=</button>
+    </div>
+    <button class="submit">Submit</button>
+  </section>
+  <!-- information bar -->
+  <section class="info_bar">
+    <h3 class="title">Welcome <span id="name">Kid</span></h3>
+    <!-- day streak -->
+    <h3 class="title">Day Streak: </h3>
+    <div class="streak">
+      <div class="streak_day sun">
+        <h4 class="day_streak">SUN</h4>
+        <i class="bi bi-fire"></i>
+      </div>
+      <div class="streak_day mon">
+        <h4 class="day_streak">MON</h4>
+        <i class="bi bi-fire"></i>
+      </div>
+      <div class="streak_day tue">
+        <h4 class="day_streak">TUE</h4>
+        <i class="bi bi-fire"></i>
+      </div>
+      <div class="streak_day wed">
+        <h4 class="day_streak">WED</h4>
+        <i class="bi bi-fire"></i>
+      </div>
+      <div class="streak_day thu">
+        <h4 class="day_streak">THU</h4>
+        <i class="bi bi-fire"></i>
+      </div>
+      <div class="streak_day fri">
+        <h4 class="day_streak">FRI</h4>
+        <i class="bi bi-fire"></i>
+      </div>
+      <div class="streak_day sat">
+        <h4 class="day_streak">SAT</h4>
+        <i class="bi bi-fire"></i>
+      </div>
+    </div>
+    <!-- statistics -->
+    <h3 class="title">Statistics</h3>
+    <div class="statistics">
+      <div class="correct">
+        <i class="bi bi-check-circle-fill"></i>
+        <span class="stat">12</span>
+      </div>
+      <div class="incorrect">
+        <i class="bi bi-x-circle-fill"></i>
+        <span class="stat">4</span>
+      </div>
+  </section>
+  </section>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>

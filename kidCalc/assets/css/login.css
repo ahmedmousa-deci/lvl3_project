@@ -1,6 +1,6 @@
 .form {
   /* centering the form */
-  margin: 1.5rem auto;
+  margin: auto;
   /* i used min max width to make it responsive */
   min-width: 300px;
   max-width: 600px;
