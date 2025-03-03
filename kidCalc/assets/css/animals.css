@@ -1,0 +1,19 @@
+/* define theme images */
+
+.kidcalc_section {
+  background-image: url(../images/animals.png);
+}
+
+.kidcalc::before {
+  background-image: url(../images/cat.png);
+}
+
+.kidcalc::after {
+  background-image: url(../images/sheep.png);
+}
+
+/* define theme colors */
+
+:root {
+  --border-color: darksalmon;
+}

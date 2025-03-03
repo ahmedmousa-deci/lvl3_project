@@ -12,3 +12,9 @@
 .kidcalc::after {
   background-image: url(../images/bananas.png);
 }
+
+/* define theme colors */
+
+:root {
+  --border-color: darkorange;
+}

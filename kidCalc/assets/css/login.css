@@ -9,6 +9,8 @@
   align-items: center;
   background: var(--color-4);
   padding: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
 }
 
 .name, .age, .theme {
@@ -33,4 +35,5 @@
   font-size: 1.2rem;
   cursor: pointer;
   outline: 0;
+  border: 2px solid var(--border-color);
 }

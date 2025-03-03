@@ -11,3 +11,9 @@
 .kidcalc::after {
   background-image: url(../images/spacecraft.png);
 }
+
+/* define theme colors */
+
+:root {
+  --border-color: blueviolet;
+}

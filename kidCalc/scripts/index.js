@@ -1,25 +1,22 @@
+const themes = ["space", "fruits", "animals"];
+
 const theme = localStorage.getItem('theme');
 
-// set the theme based on the user's preference
-if (theme === "fruits") {
-  document.getElementById("fruits_link").disabled = false;
+const themeChanger = () => {
+  const currentTheme = parseInt(document.getElementById("theme").value);
+  localStorage.setItem("theme", currentTheme.toString());
+  document.getElementById(themes[currentTheme]).disabled = false;
+  document.getElementById(themes[(currentTheme + 1) % 3]).disabled = true;
+  document.getElementById(themes[(currentTheme + 2) % 3]).disabled = true;
+}
+
+if (theme && ["0", "1", "2"].includes(theme)) {
+  document.getElementById("theme").value = theme;
+  themeChanger()
 } else {
-  document.getElementById("space_link").disabled = false;
+  localStorage.setItem("theme", "0");
 }
-
-
 const themeSelector = document.getElementById("theme");
-if (theme) {
-  themeSelector.value = theme;
-}
 
-themeSelector.onchange = () => {
-  localStorage.setItem("theme", themeSelector.value);
-  if (themeSelector.value === "fruits") {
-    document.getElementById("fruits_link").disabled = false;
-    document.getElementById("space_link").disabled = true;
-  } else {
-    document.getElementById("space_link").disabled = false;
-    document.getElementById("fruits_link").disabled = true;
-  }
-}
+
+themeSelector.onchange = themeChanger;

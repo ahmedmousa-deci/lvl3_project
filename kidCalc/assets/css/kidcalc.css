@@ -5,6 +5,7 @@
   border-radius: 20px;
   background: var(--color-4);
   position: relative;
+  border: 2px solid var(--border-color);
 }
 
 /* adding image on the top right of the calculator */
@@ -120,6 +121,7 @@
   top: 0;
   right: 0;
   transform: translate(-20px, 50%);
+  border: 2px solid var(--border-color);
 }
 
 .title {
